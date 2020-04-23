@@ -13,6 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="baidu-site-verification" content="uymMxNPUTR" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
@@ -126,6 +127,15 @@
     
   </li>
   
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <span>live2d</span>
+    </a>
+    
+  </li>
+  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -225,6 +235,17 @@
 			    <i class="fa-fw fas fa-address-book"></i>
 			
 			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+				<i class="fas fa-fw fa-link"></i>
+			
+			live2d
 		</a>
           
         </li>
@@ -628,6 +649,33 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '8a9811fa9afb902509f1',
+        clientSecret: 'a617ba5fe54fa0c29733ed371948b63a544269fa',
+        repo: 'qingyiqian2.github.io',
+        owner: 'qingyiqian2',
+        admin: "qingyiqian2",
+        id: '2020-04-23T05-35-50',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
 
     
 
@@ -1012,7 +1060,7 @@ $(function () {
     <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
     <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/piao.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
 
         <script src="//cdn.jsdelivr.net/npm/js-base64/base64.min.js"></script>
         <script>
@@ -1032,6 +1080,6 @@ $(function () {
             }
           }
         });
-        </script></body>
+        </script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
