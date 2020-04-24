@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="努力二十个小时的结果, Java,HTML,CSS,JavaScript">
+    <meta name="keywords" content="小白也能拥有一个自己的博客, Java,HTML,CSS,JavaScript">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>努力二十个小时的结果 | 椒盐柠檬</title>
+    <title>小白也能拥有一个自己的博客 | 椒盐柠檬</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -30,10 +30,280 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.0"></head>
+<style type="text/css" lang="css">
+    #loading-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FFF;
+        text-align: center;
+        /* loader页面消失采用渐隐的方式*/
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+    .loading-image{
+        width: 120px;
+        height: 50px;
+        transform: translate(-50%);
+    }
+
+    .loading-image div:nth-child(2) {
+        -webkit-animation: pacman-balls 1s linear 0s infinite;
+        animation: pacman-balls 1s linear 0s infinite
+    }
+
+    .loading-image div:nth-child(3) {
+        -webkit-animation: pacman-balls 1s linear .33s infinite;
+        animation: pacman-balls 1s linear .33s infinite
+    }
+
+    .loading-image div:nth-child(4) {
+        -webkit-animation: pacman-balls 1s linear .66s infinite;
+        animation: pacman-balls 1s linear .66s infinite
+    }
+
+    .loading-image div:nth-child(5) {
+        -webkit-animation: pacman-balls 1s linear .99s infinite;
+        animation: pacman-balls 1s linear .99s infinite
+    }
+
+   .loading-image div:first-of-type {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
+        animation: rotate_pacman_half_up .5s 0s infinite;
+    }
+    .loading-image div:nth-child(2) {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
+        animation: rotate_pacman_half_down .5s 0s infinite;
+        margin-top: -50px;
+    }
+    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
 
 
-<body>
+    .loading-image div:nth-child(3),
+    .loading-image div:nth-child(4),
+    .loading-image div:nth-child(5),
+    .loading-image div:nth-child(6){
+        background-color: #49b1f5;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 2px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: translateY(-6.25px);
+        top: 25px;
+        left: 100px;
+    }
+    .loading-text{
+        margin-bottom: 20vh;
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    @media only screen and (max-width: 500px) {
+         .loading-text{
+            font-size: 1.5rem;
+         }
+    }
+    .fadeout {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    /* logo出现动画 */
+    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
+ </style>
+ <script>
+(function () {
+    const loaded = function(){
+       setTimeout(function(){
+            const loader = document.getElementById("loading-container");
+            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
+            // document.getElementById("body-wrap").style.display="flex";
+            setTimeout(function(){
+                loader.style.display="none";
+            },1000); 
+        },1000);//强制显示loading page 1s  
+    };
+    loaded();
+})()
+ </script><meta name="generator" content="Hexo 4.2.0"><style type="text/css" lang="css">
+    #loading-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FFF;
+        text-align: center;
+        /* loader页面消失采用渐隐的方式*/
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+    .loading-image{
+        width: 120px;
+        height: 50px;
+        transform: translate(-50%);
+    }
+
+    .loading-image div:nth-child(2) {
+        -webkit-animation: pacman-balls 1s linear 0s infinite;
+        animation: pacman-balls 1s linear 0s infinite
+    }
+
+    .loading-image div:nth-child(3) {
+        -webkit-animation: pacman-balls 1s linear .33s infinite;
+        animation: pacman-balls 1s linear .33s infinite
+    }
+
+    .loading-image div:nth-child(4) {
+        -webkit-animation: pacman-balls 1s linear .66s infinite;
+        animation: pacman-balls 1s linear .66s infinite
+    }
+
+    .loading-image div:nth-child(5) {
+        -webkit-animation: pacman-balls 1s linear .99s infinite;
+        animation: pacman-balls 1s linear .99s infinite
+    }
+
+   .loading-image div:first-of-type {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
+        animation: rotate_pacman_half_up .5s 0s infinite;
+    }
+    .loading-image div:nth-child(2) {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
+        animation: rotate_pacman_half_down .5s 0s infinite;
+        margin-top: -50px;
+    }
+    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+
+    .loading-image div:nth-child(3),
+    .loading-image div:nth-child(4),
+    .loading-image div:nth-child(5),
+    .loading-image div:nth-child(6){
+        background-color: #49b1f5;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 2px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: translateY(-6.25px);
+        top: 25px;
+        left: 100px;
+    }
+    .loading-text{
+        margin-bottom: 20vh;
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    @media only screen and (max-width: 500px) {
+         .loading-text{
+            font-size: 1.5rem;
+         }
+    }
+    .fadeout {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    /* logo出现动画 */
+    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
+ </style>
+ <script>
+(function () {
+    const loaded = function(){
+       setTimeout(function(){
+            const loader = document.getElementById("loading-container");
+            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
+            // document.getElementById("body-wrap").style.display="flex";
+            setTimeout(function(){
+                loader.style.display="none";
+            },1000); 
+        },1000);//强制显示loading page 1s  
+    };
+    loaded();
+})()
+ </script></head>
+
+
+
+ <div id="loading-container">
+     <p class="loading-text">玩命加载中 . . . </p> 
+     <div class="loading-image">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div> 
+         <div></div>
+     </div>
+ </div><body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -246,12 +516,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">努力二十个小时的结果</h1>
+                    <h1 class="description center-align post-title">小白也能拥有一个自己的博客</h1>
                 </div>
             </div>
         </div>
@@ -376,14 +646,23 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java/">
-                                <span class="chip bg-color">Java</span>
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%B0%8F%E7%99%BD/" class="post-category">
+                                小白
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -392,7 +671,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-23
+                    2020-04-24
                 </div>
                 
 
@@ -408,9 +687,88 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>##一点点小小的感叹<br>两个晚上的通宵，终于算是完成度比较高的完成了这个个人博客<br>不过后续还是需要再完善一些细节你们如果有什么建议也可以在<br>留言板上给我留言</p>
+                <blockquote>
+<p>有很多人问我，你是怎么做的这个博客啊？接下来这篇文章就算你是计算机小白中的小白也能看懂！</p>
+</blockquote>
+<h2 id="博客环境的搭建"><a href="#博客环境的搭建" class="headerlink" title="博客环境的搭建"></a>博客环境的搭建</h2><h3 id="Node-js的安装"><a href="#Node-js的安装" class="headerlink" title="Node.js的安装"></a>Node.js的安装</h3><p>1.首先去<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a> 下载node.js的安装程序，根据你电脑系统的配置信息，下载对应的安装程序。<br><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/nodeimgs.jpg" alt=""></p>
+<p>2.一路下一步当看见下图所显示情况，表示安装完成</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424144103.png" alt=""></p>
+<p>3.我们要在环境里面验证node.js是否安装成功，下图内容表示已经成功安装。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424144307.png" alt=""></p>
+<p>4.设置npm的镜像源：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>输入上面代码<br><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424144914.png" alt=""><br>然后Node.js就安装完毕了，下面开始Git的安装。</p>
+<h3 id="hexo的安装"><a href="#hexo的安装" class="headerlink" title="hexo的安装"></a>hexo的安装</h3><blockquote>
+<p>本篇文章只讲用hexo来搭建的博客系统，其他方式大家可以参照网上的各种文章。<br>在cmd下输入下面代码</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>等待安装完成后可以用 hexo -v 来验证是否安装成功，如下图即安装成功<br><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424150856.png" alt=""></p>
+<h3 id="使用hexo来搭建博客"><a href="#使用hexo来搭建博客" class="headerlink" title="使用hexo来搭建博客"></a>使用hexo来搭建博客</h3><p>1.在你喜欢的位置创建一个空的文件夹，我们所有的博客内容全部是在这个文件夹内的</p>
+<blockquote>
+<p>如果搭建博客过程中出现任何问题可以直接把这个文件夹删除重来，所以在搭建过程中不要怕出错</p>
+</blockquote>
+<p>2.在cmd中进入博客文件夹blog<br>1.使用下图的方法就可以切换到我们的博客文件夹了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424151654.png" alt=""></p>
+<p>3.输入hexo inti来搭建博客(需要一段时间安装)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\blog&gt;hexo init</span><br></pre></td></tr></table></figure>
+
+<p>4.输入hexo s来启动博客</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\blog&gt;hexo s</span><br></pre></td></tr></table></figure>
+<p>启动完成如下图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424152516.png" alt=""></p>
+<p>5.在浏览器中输入上图红色方框内的网址，你就会发现你的博客已经搭建起来啦！</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424152705.png" alt=""></p>
+<blockquote>
+<p>若要关闭在cmd界面使用Ctrl+C来关闭</p>
+</blockquote>
+<h3 id="发布我们的第一篇文章"><a href="#发布我们的第一篇文章" class="headerlink" title="发布我们的第一篇文章"></a>发布我们的第一篇文章</h3><p>1.在cmd中使用下图代码来创建我们的第一篇文章</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\blog&gt;hexo n &quot;我的第一篇博客文章&quot;</span><br></pre></td></tr></table></figure>
+
+<p>如下图所示表示创建成功</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/a.jpg" alt=""></p>
+<p>2.编写我们的文章</p>
+<p>去到博客文章的文件夹，使用文本编辑器打开文件（啥都没就记事本也行）我就用记事本来演示一下，这样就算成功了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424155046.png" alt=""></p>
+<p>3.让我们写的文章发布在博客上</p>
+<p>我们重新回到cmd界面先使用 hexo clean 清理一下，再用 hexo g 生成，最后用 hexo s 启动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">D:\blog&gt;hexo clean</span><br><span class="line">D:\blog&gt;hexo g</span><br><span class="line">D:\blog&gt;hexo s</span><br></pre></td></tr></table></figure>
+
+<p>然后打开上面红色方框内的网址或者刷新一下你就会发现我们的文章已经发布到博客上去啦！<br><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424155437.png" alt=""></p>
+<h3 id="将我们的博客部署到远端"><a href="#将我们的博客部署到远端" class="headerlink" title="将我们的博客部署到远端"></a>将我们的博客部署到远端</h3><blockquote>
+<p>大家最关心的地方来了，博客都搭建起来了，只能自己看见怎么行，当然要把博客部署到远端让大家都来参观你的个性博客</p>
+</blockquote>
+<blockquote>
+<p>有人就问了：我没有服务器也没有域名怎么才能把我的博客部署到远端让大家都能看见呢？</p>
+</blockquote>
+<p>这篇文章我就给大家推荐一个不需要服务器和域名的方法也能让你的朋友们能再网上看见你的博客，大家可以先用这个尝试一下等于以后拥有了自己的服务器之后再把博客放上去，好了我们话不多说 开始正题。</p>
+<p>1.注册一个github账号和仓库<br>登录网站 <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> 右上角创建一个自己的账号，登入之后点击右上角加号创建一个自己的仓库</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424160527.png" alt=""></p>
+<p>创建仓库如下图<br><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/123.jpg" alt=""></p>
+<p>创建完成：</p>
+<blockquote>
+<p>注意箭头处的地址代码</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/1234.jpg" alt=""></p>
+<p>2.git插件安装<br>在D:\blog目录下输入 cnpm install –save hexo-deployer-git 就可以完成安装了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\blog&gt;cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p>3.配置_config.yml文件<br>在blog目录下有个config.yml文件 我们用记事本打开他来到文件最低端能看见一个Deployment的配置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424162451.png" alt=""></p>
+<p>改写文件内容(注意代码间的空格不能漏！)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: 这里填写上面箭头处的代码复制过来</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
+<p>保存退出。</p>
+<p>4.部署到远端<br>非常简单 输入一行代码 hexo d</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\blog&gt;hexo d</span><br></pre></td></tr></table></figure>
+<p>然后会提示让你输入github的账号密码</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424162818.png" alt=""></p>
+<p>输入完成之后 等待一会上传的时间就完成了，是不是非常简单</p>
+<p>5.访问我的博客</p>
+<p>博客的域名就是 用户名.github,io 直接打开浏览器输入就可以访问啦！</p>
 <hr>
-<p>第一篇就随便说说吧 继续努力！</p>
+<blockquote>
+<p>有人就说了：为什么你的博客这么好看</p>
+</blockquote>
+<p>这就涉及一个主题的问题了，至于主题的更换和个性化我们下篇文章再来讲解，希望我的这一篇文章能帮到大家！</p>
 
             </div>
             <hr/>
@@ -436,7 +794,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/04/23/%E5%8A%AA%E5%8A%9B%E4%BA%8C%E5%8D%81%E4%B8%AA%E5%B0%8F%E6%97%B6%E7%9A%84%E7%BB%93%E6%9E%9C/">http://yoursite.com/2020/04/23/%E5%8A%AA%E5%8A%9B%E4%BA%8C%E5%8D%81%E4%B8%AA%E5%B0%8F%E6%97%B6%E7%9A%84%E7%BB%93%E6%9E%9C/</a>
+                    <a href="http://yoursite.com/posts/50a6.html">http://yoursite.com/posts/50a6.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -474,8 +832,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Java/">
-                                    <span class="chip bg-color">Java</span>
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
@@ -646,7 +1004,7 @@
         repo: 'qingyiqian2.github.io',
         owner: 'qingyiqian2',
         admin: "qingyiqian2",
-        id: '2020-04-23T10-05-37',
+        id: '2020-04-24T13-32-48',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -675,32 +1033,36 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2020/04/23/%E5%8A%AA%E5%8A%9B%E4%BA%8C%E5%8D%81%E4%B8%AA%E5%B0%8F%E6%97%B6%E7%9A%84%E7%BB%93%E6%9E%9C/">
+                <a href="/posts/50a6.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="努力二十个小时的结果">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="小白也能拥有一个自己的博客">
                         
-                        <span class="card-title">努力二十个小时的结果</span>
+                        <span class="card-title">小白也能拥有一个自己的博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ##一点点小小的感叹两个晚上的通宵，终于算是完成度比较高的完成了这个个人博客不过后续还是需要再完善一些细节你们如果有什么建议也可以在留言板上给我留言
+                            
+有很多人问我，你是怎么做的这个博客啊？接下来这篇文章就算你是计算机小白中的小白也能看懂！
 
-第一篇就随便说说吧 继续努力！
-
+博客环境的搭建Node.js的安装1.首先去https://nodejs.org/en/download/ 下载node.js的安装程序，根据你电
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-23
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-24
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            椒盐柠檬
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B0%8F%E7%99%BD/" class="post-category">
+                                    小白
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -709,8 +1071,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -724,32 +1086,36 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/23/%E5%8A%AA%E5%8A%9B%E4%BA%8C%E5%8D%81%E4%B8%AA%E5%B0%8F%E6%97%B6%E7%9A%84%E7%BB%93%E6%9E%9C/">
+                <a href="/posts/50a6.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="努力二十个小时的结果">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="小白也能拥有一个自己的博客">
                         
-                        <span class="card-title">努力二十个小时的结果</span>
+                        <span class="card-title">小白也能拥有一个自己的博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ##一点点小小的感叹两个晚上的通宵，终于算是完成度比较高的完成了这个个人博客不过后续还是需要再完善一些细节你们如果有什么建议也可以在留言板上给我留言
+                            
+有很多人问我，你是怎么做的这个博客啊？接下来这篇文章就算你是计算机小白中的小白也能看懂！
 
-第一篇就随便说说吧 继续努力！
-
+博客环境的搭建Node.js的安装1.首先去https://nodejs.org/en/download/ 下载node.js的安装程序，根据你电
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-23
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-24
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            椒盐柠檬
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B0%8F%E7%99%BD/" class="post-category">
+                                    小白
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -758,8 +1124,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -907,8 +1273,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             Copyright&nbsp;&copy;
             <span id="year">2020</span>
             <a href="http://yoursite.com" target="_blank">椒盐柠檬</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
             <br>
             
             
@@ -1124,6 +1489,6 @@ $(function () {
             }
           }
         });
-        </script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+        </script></body>
 
 </html>
