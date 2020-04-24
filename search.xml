@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>小白也能拥有一个自己的博客</title>
+      <link href="/posts/50a6.html"/>
+      <url>/posts/50a6.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>有很多人问我，你是怎么做的这个博客啊？接下来这篇文章就算你是计算机小白中的小白也能看懂！</p></blockquote><h2 id="博客环境的搭建"><a href="#博客环境的搭建" class="headerlink" title="博客环境的搭建"></a>博客环境的搭建</h2><h3 id="Node-js的安装"><a href="#Node-js的安装" class="headerlink" title="Node.js的安装"></a>Node.js的安装</h3><p>1.首先去<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a> 下载node.js的安装程序，根据你电脑系统的配置信息，下载对应的安装程序。<br><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/nodeimgs.jpg" alt=""></p><p>2.一路下一步当看见下图所显示情况，表示安装完成</p><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424144103.png" alt=""></p><p>3.我们要在环境里面验证node.js是否安装成功，下图内容表示已经成功安装。</p><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424144307.png" alt=""></p><p>4.设置npm的镜像源：</p><pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></pre><p>输入上面代码<br><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424144914.png" alt=""><br>然后Node.js就安装完毕了，下面开始Git的安装。</p><h3 id="hexo的安装"><a href="#hexo的安装" class="headerlink" title="hexo的安装"></a>hexo的安装</h3><blockquote><p>本篇文章只讲用hexo来搭建的博客系统，其他方式大家可以参照网上的各种文章。<br>在cmd下输入下面代码</p></blockquote><pre><code>cnpm install -g hexo-cli</code></pre><p>等待安装完成后可以用 hexo -v 来验证是否安装成功，如下图即安装成功<br><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424150856.png" alt=""></p><h3 id="使用hexo来搭建博客"><a href="#使用hexo来搭建博客" class="headerlink" title="使用hexo来搭建博客"></a>使用hexo来搭建博客</h3><p>1.在你喜欢的位置创建一个空的文件夹，我们所有的博客内容全部是在这个文件夹内的</p><blockquote><p>如果搭建博客过程中出现任何问题可以直接把这个文件夹删除重来，所以在搭建过程中不要怕出错</p></blockquote><p>2.在cmd中进入博客文件夹blog<br>1.使用下图的方法就可以切换到我们的博客文件夹了</p><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424151654.png" alt=""></p><p>3.输入hexo inti来搭建博客(需要一段时间安装)</p><pre><code>D:\blog&gt;hexo init</code></pre><p>4.输入hexo s来启动博客</p><pre><code>D:\blog&gt;hexo s</code></pre><p>启动完成如下图</p><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424152516.png" alt=""></p><p>5.在浏览器中输入上图红色方框内的网址，你就会发现你的博客已经搭建起来啦！</p><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424152705.png" alt=""></p><blockquote><p>若要关闭在cmd界面使用Ctrl+C来关闭</p></blockquote><h3 id="发布我们的第一篇文章"><a href="#发布我们的第一篇文章" class="headerlink" title="发布我们的第一篇文章"></a>发布我们的第一篇文章</h3><p>1.在cmd中使用下图代码来创建我们的第一篇文章</p><pre><code>D:\blog&gt;hexo n &quot;我的第一篇博客文章&quot;</code></pre><p>如下图所示表示创建成功</p><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/a.jpg" alt=""></p><p>2.编写我们的文章</p><p>去到博客文章的文件夹，使用文本编辑器打开文件（啥都没就记事本也行）我就用记事本来演示一下，这样就算成功了</p><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424155046.png" alt=""></p><p>3.让我们写的文章发布在博客上</p><p>我们重新回到cmd界面先使用 hexo clean 清理一下，再用 hexo g 生成，最后用 hexo s 启动</p><pre><code>D:\blog&gt;hexo cleanD:\blog&gt;hexo gD:\blog&gt;hexo s</code></pre><p>然后打开上面红色方框内的网址或者刷新一下你就会发现我们的文章已经发布到博客上去啦！<br><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424155437.png" alt=""></p><h3 id="将我们的博客部署到远端"><a href="#将我们的博客部署到远端" class="headerlink" title="将我们的博客部署到远端"></a>将我们的博客部署到远端</h3><blockquote><p>大家最关心的地方来了，博客都搭建起来了，只能自己看见怎么行，当然要把博客部署到远端让大家都来参观你的个性博客</p></blockquote><blockquote><p>有人就问了：我没有服务器也没有域名怎么才能把我的博客部署到远端让大家都能看见呢？</p></blockquote><p>这篇文章我就给大家推荐一个不需要服务器和域名的方法也能让你的朋友们能再网上看见你的博客，大家可以先用这个尝试一下等于以后拥有了自己的服务器之后再把博客放上去，好了我们话不多说 开始正题。</p><p>1.注册一个github账号和仓库<br>登录网站 <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> 右上角创建一个自己的账号，登入之后点击右上角加号创建一个自己的仓库</p><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424160527.png" alt=""></p><p>创建仓库如下图<br><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/123.jpg" alt=""></p><p>创建完成：</p><blockquote><p>注意箭头处的地址代码</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/1234.jpg" alt=""></p><p>2.git插件安装<br>在D:\blog目录下输入 cnpm install –save hexo-deployer-git 就可以完成安装了</p><pre><code>D:\blog&gt;cnpm install --save hexo-deployer-git</code></pre><p>3.配置_config.yml文件<br>在blog目录下有个config.yml文件 我们用记事本打开他来到文件最低端能看见一个Deployment的配置</p><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424162451.png" alt=""></p><p>改写文件内容(注意代码间的空格不能漏！)</p><pre><code>deploy:    type: git    repo: 这里填写上面箭头处的代码复制过来    branch: master</code></pre><p>保存退出。</p><p>4.部署到远端<br>非常简单 输入一行代码 hexo d</p><pre><code>D:\blog&gt;hexo d</code></pre><p>然后会提示让你输入github的账号密码</p><p><img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/20200424162818.png" alt=""></p><p>输入完成之后 等待一会上传的时间就完成了，是不是非常简单</p><p>5.访问我的博客</p><p>博客的域名就是 用户名.github,io 直接打开浏览器输入就可以访问啦！</p><hr><blockquote><p>有人就说了：为什么你的博客这么好看</p></blockquote><p>这就涉及一个主题的问题了，至于主题的更换和个性化我们下篇文章再来讲解，希望我的这一篇文章能帮到大家！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 小白 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
