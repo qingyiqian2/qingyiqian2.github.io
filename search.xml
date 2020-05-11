@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>html学习笔记</title>
+      <link href="/posts/c630.html"/>
+      <url>/posts/c630.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="HTML概述"><a href="#HTML概述" class="headerlink" title="HTML概述"></a>HTML概述</h3><ul><li>1.HTML:Hyper Text Language超文本标记语言</li><li>2.超文本：比普通文本功能更加强大，可以添加各种样式</li><li>3.标记语言：通过一组标签来对内容进行描述&lt; &gt;</li></ul><h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><ul><li>1.font标签<blockquote><ul><li>color: 颜色</li><li>size: 改变字体大小</li><li>face: 改变字体</li></ul></blockquote></li><li>2.标签扩展<blockquote><ul><li>b标签加粗</li><li>strong标签也可以加粗（带语义的标签）</li><li>i标签斜体</li><li>em标签也可以斜体（带语义的标签）</li></ul></blockquote></li><li>3.img标签<blockquote><ul><li>src：指定图片路径</li><li>width：指定图片宽度</li><li>height：指定图片高度</li><li>alt：文件加载失败时显示的提示信息</li><li>./:代表当前路径{默认情况}</li><li>../：代表上一级路径</li></ul></blockquote></li><li>4.列表标签<blockquote><ul><li>ul：无序列表<blockquote><ul><li>type属性：</li><li>1.circle：小圆圈</li><li>2.disc: 小圆点(默认)</li><li>3.square: 小方块</li></ul></blockquote></li><li>ol：有序列表<blockquote><ul><li>type属性:<blockquote><ul><li>a: abcd</li></ul></blockquote></li><li>start属性:从几开始，必须写数字</li></ul></blockquote></li><li>li：列表项</li></ul></blockquote></li><li>5.超链接标签<pre><code>  &lt;a href=&quot;http://www.baidu.com&quot;&gt;target=&quot;blank&quot;&gt;百度&lt;/a&gt;</code></pre>  这个target属性设置成blank用于点击链接将使用一个新页面打开网页,默认为当前窗口打开（属性为self）</li><li>6.表格标签<blockquote><ul><li>table:表格标签<blockquote><ul><li>tr:行标签</li><li>td:列标签</li><li>background:背景图片</li><li>border: 边框</li><li>width: 宽度</li><li>height： 高度</li><li>bgcolor: 背景颜色</li><li>align: 对齐方式</li></ul></blockquote></li><li>表格合并<blockquote><ul><li>colspan: 跨列合并</li><li>rowspan: 跨行合并<br>下面代码仅做参考！</li></ul></blockquote></li></ul></blockquote><pre><code>&lt;table border=&quot;1px&quot; width=&quot;400px&quot; bgcolor=&quot;yellow&quot; align=&quot;center&quot;&gt;  &lt;tr bgcolor=&quot;red&quot; align=&quot;center&quot;&gt;      &lt;td bgcolor=&quot;blue&quot; align=&quot;center&quot; colspan=&quot;2&quot;&gt;11&lt;/td&gt;      &lt;!-- &lt;td&gt;12&lt;/td&gt; 合并之后就要去除被合并的格子--&gt;      &lt;td&gt;13&lt;/td&gt;      &lt;td&gt;14&lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;      &lt;td&gt;21&lt;/td&gt;      &lt;td&gt;22&lt;/td&gt;      &lt;td&gt;23&lt;/td&gt;      &lt;td&gt;24&lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;      &lt;td&gt;31&lt;/td&gt;      &lt;td&gt;32&lt;/td&gt;      &lt;td&gt;33&lt;/td&gt;      &lt;td&gt;34&lt;/td&gt;  &lt;/tr&gt;&lt;/table&gt;</code></pre></li><li>7.表单标签<blockquote><ul><li>action:提交的地址</li><li>medthod属性:<blockquote><ul><li>get: 默认为get方式 会将参数拼接在链接后面，有大小限制</li><li>post: 会将参数封装在请求体中</li></ul></blockquote></li><li>input：<blockquote><ul><li>type属性：<blockquote><ul><li>text: 文本</li><li>password: 密码</li><li>radio: 单选按钮</li><li>checkbox: 复选框</li><li>file: 上传文件</li><li>submit: 提交按钮</li><li>reset: 重置按钮</li><li>hidden: 隐藏域</li><li>date: 日期类型</li><li>tel： 手机号(只有手机上能看出效果)</li><li>number： 只能输入数字</li></ul></blockquote></li><li>placeholder: 默认提示信息</li><li>name： 在表单提交的时候，当做参数的名称</li><li>id： 给输入项一个名字，以便于后期我们去找到他，并且操作他</li></ul></blockquote></li><li>textarea: 文本域 可以输入一段文本<blockquote><ul><li>cols: 宽度</li><li>rows： 高度</li></ul></blockquote></li><li>select: 下拉列表<blockquote><ul><li>option: 选择项</li></ul></blockquote></li></ul></blockquote></li><li>8.框架标签<blockquote><ul><li>frameset(如果使用frameset标签就要将body标签去掉)<blockquote><ul><li>cols: 按列划分</li><li>rows: 按行划分</li></ul></blockquote></li></ul></blockquote></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小白也能拥有一个自己的博客</title>
       <link href="/posts/50a6.html"/>
       <url>/posts/50a6.html</url>
