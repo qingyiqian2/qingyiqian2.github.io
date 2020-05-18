@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>css学习笔记</title>
+      <link href="/posts/a77c.html"/>
+      <url>/posts/a77c.html</url>
+      
+        <content type="html"><![CDATA[<h4 id="技术分析"><a href="#技术分析" class="headerlink" title="技术分析"></a>技术分析</h4><p>HTML的块标签：</p><blockquote><p>div标签：默认占一行，两个div的内容会换行显示<br>span标签：内容显示在同一行</p></blockquote><p>CSS概述：<br>主要作用：用来美化HTML页面</p><blockquote><p>Cascading Stayle Sheets:层叠样式表</p></blockquote><p>CSS的简单语法：<br>在一个style标签中，去编写CSS的内容,最好将style标签写在head标签中</p><pre><code>&lt;style&gt;    选择器{        属性名称：属性的值；        属性名称2：属性的值2；    }&lt;/style&gt;</code></pre><h3 id="CSS选择器：帮助我们找到我们要修饰的标签或者元素"><a href="#CSS选择器：帮助我们找到我们要修饰的标签或者元素" class="headerlink" title="CSS选择器：帮助我们找到我们要修饰的标签或者元素"></a>CSS选择器：帮助我们找到我们要修饰的标签或者元素</h3><p>1.元素选择器：标签名称{}</p><pre><code>元素的名称{    属性名称：属性的值；    属性名称2：属性的值2；}</code></pre><p>2.ID选择器：以#开头，#ID的名称</p><pre><code>以#开头，ID的名称必须是唯一的#ID的名称{    属性名称：属性的值；    属性名称2：属性的值2；}</code></pre><p>3.类选择器：以.开头 .类的名称</p><pre><code>以.开头.类的名称{    属性名称：属性的值；    属性名称2：属性的值2}</code></pre><h3 id="CSS的引入方式："><a href="#CSS的引入方式：" class="headerlink" title="CSS的引入方式："></a>CSS的引入方式：</h3><p>1.外部样式：通过link标签引入一个外部的CSS文件</p><p>2.内部样式：直接在style标签内编写CSS代码</p><p>3.行内样式：直接在目标标签中添加style属性，编写CSS样式</p><h3 id="CSS浮动"><a href="#CSS浮动" class="headerlink" title="CSS浮动"></a>CSS浮动</h3><p>采用流布局的格式<br>浮动的元素会脱离正常的文档流，在正常的文档流中不占空间<br>float属性：</p><blockquote><p>left:左浮动<br>right:右浮动</p></blockquote><p>clear属性：清除浮动</p><blockquote><p>both：两边都不允许浮动<br>left：左边不许浮动<br>right：右边不许浮动</p></blockquote><h3 id="CSS的优先级"><a href="#CSS的优先级" class="headerlink" title="CSS的优先级"></a>CSS的优先级</h3><p>1.按照选择器搜索精度编写：<br>    行内样式&gt;ID选择器&gt;类选择器&gt;元素选择器（就近原则）</p><h3 id="CSS的其他选择器"><a href="#CSS的其他选择器" class="headerlink" title="CSS的其他选择器"></a>CSS的其他选择器</h3><p>1.属性选择器：<br>    实用：<img src="https://cdn.jsdelivr.net/gh/qingyiqian2/qingyiqian2-imgs/medias/11.png" alt=""></p><p>2.后代选择器：<br>    使用空格隔开 选中所有的后代</p><p>3.子元素选择器：<br>    使用 &gt; 隔开，父选择器&gt;子选择器</p><p>4.伪类选择器:<br>    通常都是用在A标签上</p><pre><code>&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;title&gt;&lt;/title&gt;    &lt;style&gt;        a:link {color: red}  /*未访问的链接*/        a:visited {color: purple}  /*已访问的链接*/        a:hover {color:blue} /*鼠标移动到链接上*/        a:active {color: green} /*选定的链接*/    &lt;/style&gt;&lt;/head&gt;&lt;body&gt;    &lt;a href=&quot;#&quot;&gt;看我变色&lt;/a&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> css </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>html学习笔记</title>
       <link href="/posts/c630.html"/>
       <url>/posts/c630.html</url>
